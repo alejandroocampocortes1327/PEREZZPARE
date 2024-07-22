@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+                'header header'
+                'nav nav'
+                'section aside'
+                'footer footer';
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            height: 100vh;
+            margin: 0px;
+			background-color: green;
+			padding: 30px;
+			border:2px solid blue;
+
+
+        }
+        header {
+            grid-area: header;
+            background-color: orange;
+			border:1px solid blue;
+			position: relative;
+	
+
+
+        }
+        nav {
+            grid-area: nav;
+            background-color: darkblue;
+			border:2px solid blue;
+
+        }
+        section {
+            grid-area: section;
+            background-color: orange;
+			border:1px solid blue;
+
+        }
+        aside {
+            grid-area: aside;
+            background-color: yellow;
+			border:1px solid blue;
+
+        }
+        footer {
+            grid-area: footer;
+            background-color: darkblue;
+			border:1px solid blue;
+
+        }
+		div {
+            grid-area: div;
+            background-color: gold;
+			border:1px solid blue;
+			margin: 2px;
+			height: 100px;
+			width: 500px;
+			position: absolute;
+			left: 730px;
+
+        }
+    </style>
+</head>
+<body>
+	
+		<header>Header
+			<div id="imagen1">
+				    <img src="imagenes/fotografia.jpg" width="500" height="100">     
+			</div>
+
+		</header>
+		<nav>Nav</nav>
+		<section>Section</section>
+		<aside>Aside</aside>
+		<footer>Footer</footer>
+	
+
+</body>
+</html>
+
